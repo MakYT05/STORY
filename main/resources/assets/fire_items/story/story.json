@@ -1,0 +1,85 @@
+{
+  "events": [
+    {
+      "id": "event1",
+      "trigger": "player_join",
+      "actions": [
+        {
+          "type": "message",
+          "text": "Добро пожаловать в мир!"
+        },
+        {
+          "type": "message",
+          "text": "Неужели ты спрашиваешь кто я?"
+        },
+        {
+          "type": "message",
+          "text": "Я - БОГ этого мира!"
+        },
+        {
+          "type": "message",
+          "text": "И тебе нужно добыть все мои божественные инструменты"
+        },
+        {
+          "type": "message",
+          "text": "Для начала вот тебе огниум, с помощью которого ты сделаешь все инструменты"
+        },
+        {
+          "type": "give_item",
+          "item": "fire_items:ognium",
+          "count": 1
+        },
+        {
+          "type": "message",
+          "text": "УДАЧИ!!!"
+        }
+      ]
+    },
+    {
+      "id": "event2",
+      "trigger": "player_dimension_change",
+      "actions": [
+        {
+          "type": "message",
+          "text": "Ты вошёл в ад. Будь готов к новым вызовам!"
+        },
+        {
+          "type": "message",
+          "text": "В этом мире прячутся самые опасные существа."
+        },
+        {
+          "type": "message",
+          "text": "Но в то же время здесь ты найдёшь необходимые ресурсы."
+        },
+        {
+          "type": "message",
+          "text": "Удачи, смельчак!"
+        }
+      ]
+    },
+    {
+      "id": "event3",
+      "trigger": "player_reach_coordinates",
+      "coordinates": {
+        "x": 0,
+        "y": 107,
+        "z": -27
+      },
+      "actions": [
+        {
+          "type": "message",
+          "text": "Ну здравствуй!"
+        },
+        {
+          "type": "spawn_npc",
+          "npc_id": "minecraft:villager",
+          "location": {
+            "x": 0,
+            "y": 107,
+            "z": -27
+          }
+        }
+      ]
+    }
+  ]
+}
